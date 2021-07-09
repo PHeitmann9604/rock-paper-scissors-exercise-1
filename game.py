@@ -15,6 +15,9 @@ if (x == "rock") or (x == "paper") or (x == "scissors"):
     print ("VALID")
 else:
     print("OOPS INVALID, Please try again")
+
+#if invalid rerun the user input
+
     x = input("Please choose one of 'rock', 'paper', 'scissors': ")
 
 print ("User Chose: ", x)
@@ -34,8 +37,11 @@ c = random.choice(valid_options)
 print("Computer Chose: ", c)
 
 #Determine the winner
+
+#If a tie rerun the game
+
 if (x == c):
-    print ("TIE")
+    print ("TIE! Please try again")
     x = input("Please choose one of 'rock', 'paper', 'scissors': ")
 
     if (x == "rock") or (x == "paper") or (x == "scissors"):
@@ -52,15 +58,12 @@ if (x == c):
     print("Computer Chose: ", c) 
 
 if (x == 'rock') and (c == 'scissors'):
-    print ("USER WINS")
+    print ("USER WINS! Congratulations!")
 elif (x == 'scissors') and (c == 'paper'):
-    print ("USER WINS")
+    print ("USER WINS! Congratulations!")
 elif(x == 'paper') and (c == 'rock'):
-    print ("USER WINS")
+    print ("USER WINS! Congratulations!")
 else:
-    print ("Computer Wins")
+    print ("Computer Wins =( Please try again")
 
     
-#source:https://stackoverflow.com/questions/39174178/restart-python-program-within-and-if-statement-not-complex
-
-
