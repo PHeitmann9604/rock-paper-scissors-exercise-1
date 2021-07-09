@@ -34,6 +34,10 @@ c = random.choice(valid_options)
 print("Computer Chose: ", c)
 
 #Determine the winner
+if (x == c):
+    print ("TIE")
+    exit()  
+
 if (x == 'rock') and (c == 'scissors'):
     print ("USER WINS")
 elif (x == 'scissors') and (c == 'paper'):
