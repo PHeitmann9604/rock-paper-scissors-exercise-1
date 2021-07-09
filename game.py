@@ -1,3 +1,6 @@
+
+import random
+
 print("Rock, Paper, Scissors, Shoot!")
 
 # ask for a user input
@@ -15,8 +18,24 @@ else:
     print("OOPS INVALID, Please try again")
     exit()
 
-print ("Later Messages")
+print ("User Chose: ", x)
+
 #Generate a computer choice
+#source: https://stackoverflow.com/questions/306400/how-to-randomly-select-an-item-from-a-list
+#source: https://docs.python.org/3/library/random.html
+
+# import random
+# 
+# foo = ['a', 'b', 'c', 'd', 'e']
+# print(random.choice(foo))
+
+valid_options = ['rock', 'paper', 'scissors']
+print(random.choice(valid_options))
+
+c = random.choice(valid_options)
+print("Computer Chose: ", c)
+
+
+
 
 #Determine the winner
-
