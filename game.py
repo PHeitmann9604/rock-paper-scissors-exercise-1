@@ -36,7 +36,20 @@ print("Computer Chose: ", c)
 #Determine the winner
 if (x == c):
     print ("TIE")
-    exit()  
+    x = input("Please choose one of 'rock', 'paper', 'scissors': ")
+
+    if (x == "rock") or (x == "paper") or (x == "scissors"):
+        print ("VALID")
+    else:
+        print("OOPS INVALID, Please try again")
+        exit()
+    
+    print ("User Chose: ", x)
+    
+    valid_options = ['rock', 'paper', 'scissors']
+    c = random.choice(valid_options)
+    
+    print("Computer Chose: ", c) 
 
 if (x == 'rock') and (c == 'scissors'):
     print ("USER WINS")
