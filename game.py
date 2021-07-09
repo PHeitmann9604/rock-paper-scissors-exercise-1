@@ -4,11 +4,10 @@ import random
 print("Rock, Paper, Scissors, Shoot!")
 
 # ask for a user input
-# source *put google doc here*
+# source: https://docs.python.org/3/library/functions.html
 #x = input('______')
 
 x = input("Please choose one of 'rock', 'paper', 'scissors': ")
-print(x)
 
 # Validate a user input
 
@@ -30,12 +29,21 @@ print ("User Chose: ", x)
 # print(random.choice(foo))
 
 valid_options = ['rock', 'paper', 'scissors']
-print(random.choice(valid_options))
-
 c = random.choice(valid_options)
+
 print("Computer Chose: ", c)
 
-
-
-
 #Determine the winner
+if (x == 'rock') and (c == 'scissors'):
+    print ("USER WINS")
+elif (x == 'scissors') and (c == 'paper'):
+    print ("USER WINS")
+elif(x == 'paper') and (c == 'rock'):
+    print ("USER WINS")
+else:
+    print ("Computer Wins")
+
+    
+#source:https://stackoverflow.com/questions/39174178/restart-python-program-within-and-if-statement-not-complex
+
+
