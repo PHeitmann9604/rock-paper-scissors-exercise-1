@@ -15,7 +15,7 @@ if (x == "rock") or (x == "paper") or (x == "scissors"):
     print ("VALID")
 else:
     print("OOPS INVALID, Please try again")
-    exit()
+    x = input("Please choose one of 'rock', 'paper', 'scissors': ")
 
 print ("User Chose: ", x)
 
@@ -43,12 +43,12 @@ if (x == c):
     else:
         print("OOPS INVALID, Please try again")
         exit()
-    
+
     print ("User Chose: ", x)
-    
+
     valid_options = ['rock', 'paper', 'scissors']
     c = random.choice(valid_options)
-    
+
     print("Computer Chose: ", c) 
 
 if (x == 'rock') and (c == 'scissors'):
