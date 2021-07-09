@@ -9,6 +9,13 @@ print(x)
 
 # Validate a user input
 
+if (x == "rock") or (x == "paper") or (x == "scissors"):
+    print ("VALID")
+else:
+    print("OOPS INVALID, Please try again")
+    exit()
+
+print ("Later Messages")
 #Generate a computer choice
 
 #Determine the winner
