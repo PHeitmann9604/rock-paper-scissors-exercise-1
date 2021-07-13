@@ -40,7 +40,7 @@ print("Computer Chose: ", c)
 
 #If a tie rerun the game
 
-if (x == c):
+while (x == c):
     print ("TIE! Please try again")
     x = input("Please choose one of 'rock', 'paper', 'scissors': ")
 
