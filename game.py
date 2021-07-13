@@ -59,11 +59,7 @@ while (x == c):
 
     print("Computer Chose: ", c) 
 
-if (x == 'rock') and (c == 'scissors'):
-    print ("USER WINS! Congratulations!")
-elif (x == 'scissors') and (c == 'paper'):
-    print ("USER WINS! Congratulations!")
-elif(x == 'paper') and (c == 'rock'):
+if ((x == 'rock') and (c == 'scissors')) or ((x == 'scissors') and (c == 'paper')) or ((x == 'paper') and (c == 'rock')):
     print ("USER WINS! Congratulations!")
 else:
     print ("Computer Wins =( Please try again")
