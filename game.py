@@ -1,6 +1,17 @@
 
 import random
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv() #> loads contents of the .env file into the script's environment
+
+user_name = os.getenv("USER_NAME")
+print(user_name) # reads the variable from the environment
+#> "Hello World"
+
+exit()
+
 print("Rock, Paper, Scissors, Shoot!")
 
 # ask for a user input
