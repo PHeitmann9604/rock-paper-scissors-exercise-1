@@ -50,7 +50,7 @@ while (x == c):
         print ("VALID")
     else:
         print("OOPS INVALID, Please try again")
-        exit()
+        x = input("Please choose one of 'rock', 'paper', 'scissors': ")
 
     print ("User Chose: ", x)
 
