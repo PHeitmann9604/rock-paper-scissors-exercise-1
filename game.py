@@ -3,14 +3,13 @@ import random
 
 import os
 from dotenv import load_dotenv
-
+ 
 load_dotenv() #> loads contents of the .env file into the script's environment
 
 user_name = os.getenv("USER_NAME")
+
 print(user_name) # reads the variable from the environment
 #> "Hello World"
-
-exit()
 
 print("Rock, Paper, Scissors, Shoot!")
 
@@ -31,7 +30,7 @@ else:
 
     x = input("Please choose one of 'rock', 'paper', 'scissors': ")
 
-print ("User Chose: ", x)
+print (user_name," Chose: ", x)
 
 #Generate a computer choice
 #source: https://stackoverflow.com/questions/306400/how-to-randomly-select-an-item-from-a-list
