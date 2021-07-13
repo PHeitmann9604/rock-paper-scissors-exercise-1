@@ -54,7 +54,6 @@ while (x == c):
 
     print ("User Chose: ", x)
 
-    valid_options = ['rock', 'paper', 'scissors']
     c = random.choice(valid_options)
 
     print("Computer Chose: ", c) 
