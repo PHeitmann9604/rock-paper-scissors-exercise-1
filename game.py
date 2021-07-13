@@ -40,6 +40,8 @@ print("Computer Chose: ", c)
 
 #If a tie rerun the game
 
+#source for while stmt: https://docs.python.org/3/reference/compound_stmts.html#while
+
 while (x == c):
     print ("TIE! Please try again")
     x = input("Please choose one of 'rock', 'paper', 'scissors': ")
