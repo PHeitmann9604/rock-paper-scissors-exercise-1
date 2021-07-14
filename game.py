@@ -30,7 +30,7 @@ else:
 
     x = input("Please choose one of 'rock', 'paper', 'scissors': ")
 
-print (user_name," Chose: ", x)
+print (user_name,"Chose: ", x)
 
 #Generate a computer choice
 #source: https://stackoverflow.com/questions/306400/how-to-randomly-select-an-item-from-a-list
@@ -62,14 +62,14 @@ while (x == c):
         print("OOPS INVALID, Please try again")
         x = input("Please choose one of 'rock', 'paper', 'scissors': ")
 
-    print ("User Chose: ", x)
+    print (user_name,"Chose: ", x)
 
     c = random.choice(valid_options)
 
     print("Computer Chose: ", c) 
 
 if ((x == 'rock') and (c == 'scissors')) or ((x == 'scissors') and (c == 'paper')) or ((x == 'paper') and (c == 'rock')):
-    print ("USER WINS! Congratulations!")
+    print (user_name,"WINS! Congratulations!")
 else:
     print ("Computer Wins =( Please try again")
 
